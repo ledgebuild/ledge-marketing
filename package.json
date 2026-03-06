@@ -1,26 +1,49 @@
 {
-  "name": "ledge-marketing",
+  "name": "radiant",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "next lint",
+    "typegen": "sanity schema extract --path=src/sanity/extract.json && sanity typegen generate && rm ./src/sanity/extract.json"
   },
   "dependencies": {
+    "@headlessui/react": "^2.2.6",
+    "@heroicons/react": "^2.2.0",
+    "@sanity/icons": "^3.7.4",
+    "@sanity/image-url": "^1.2.0",
+    "@sanity/vision": "^4.22.0",
+    "clsx": "^2.1.1",
+    "dayjs": "^1.11.13",
+    "feed": "^5.1.0",
+    "framer-motion": "^12.23.11",
     "next": "16.1.6",
-    "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "next-sanity": "^11.6.12",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "react-use-measure": "^2.1.7",
+    "sanity": "^4.22.0",
+    "styled-components": "^6.3.11"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4.2.0",
+    "@types/node": "^24",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
-    "tailwindcss": "^4",
+    "postcss": "^8.5.6",
+    "prettier": "^3.6.2",
+    "prettier-plugin-organize-imports": "^4.2.0",
+    "prettier-plugin-tailwindcss": "^0.7.2",
+    "tailwindcss": "^4.2.0",
     "typescript": "^5"
+  },
+  "overrides": {
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3"
   }
 }
