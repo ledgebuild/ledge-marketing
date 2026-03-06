@@ -21,7 +21,7 @@
 
 ---
 
-## 🦸 Hero Section
+## ✅ 🦸 Hero Section
 
 **Eyebrow label (above H1):**
 `BUILT FOR SMALL CONTRACTORS`

@@ -245,3 +245,20 @@ style(global): replace Switzer font with Barlow system
 3. **Tailwind config** — Don't add custom colors to config, use arbitrary values instead
 4. **Vercel connection** — Don't change build settings, auto-deploy stays on main
 5. **`@/` path alias** — All imports use this, don't switch to relative paths
+
+---
+
+## Known Gaps
+
+- HeroSection: placeholder screenshot — replace with real Ledge app screenshot when available
+- Navbar: still Radiant template — needs Ledge logo, nav items, orange CTA
+- Footer: still Radiant template — needs Ledge columns and copy
+- LogoCloud: still Radiant logos — swap for contractor company names
+- FeatureSection / BentoSection: still Radiant — map to 5 Ledge modules
+- DarkBentoSection: still Radiant — map to "The Stack Problem" section
+- Testimonials: still Radiant — only Marcus D. quote confirmed real, need 2 more beta user quotes
+- Pricing: still Radiant placeholder — tier prices TBD ($XX placeholders)
+- ProductPage: not created yet — needs /product route
+- AboutPage: still at /company, needs move to /about
+- BookADemoPage: not created yet — needs /book-a-demo route
+- Root stray files: HeroSection.tsx and layout.tsx exist at repo root (not committed, likely duplicates)
